@@ -1918,3 +1918,25 @@
     - CottonBoll
   - type: Extractable
     grindableSolutionName: food
+
+- type: entity
+  name: kortanut nut
+  description: A nut native to the lizardpeople's homeworld.
+  id: KortanutNut
+  parent: ProduceBase
+  components:
+  - type: Sprite
+    sprite: Objects/Specific/Hydroponics/kortanut.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: KortanutFlour
+          Quantity: 5
+  - type: Produce
+    seedId: kortanut
+  - type: Extractable
+    juiceSolution:
+      reagents:
+      - ReagentId: KortanutMilk
+        Quantity: 5

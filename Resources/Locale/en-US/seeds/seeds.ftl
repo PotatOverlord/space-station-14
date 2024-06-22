@@ -118,3 +118,5 @@ seeds-cotton-name = cotton
 seeds-cotton-display-name = cotton plant
 seeds-pyrotton-name = pyrotton
 seeds-pyrotton-display-name = pyrotton plant
+seeds-kortanut-name = kortanut
+seeds-kortanut-display-name = kortanut bush

@@ -257,3 +257,39 @@
       - !type:AdjustReagent
         reagent: Nutriment
         amount: 0.75
+
+- type: reagent
+  id: KortanutFlour
+  name: reagent-name-kortanut-flour
+  group: Foods
+  desc: reagent-desc-kortanut-flour
+  physicalDesc: reagent-physical-desc-powdery
+  flavor: nutty
+  color: brown #placeholder
+  recognizable: true
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateThirst
+        factor: -0.2 #its flour but nutty
+      - !type:AdjustReagent
+        reagent: Nutriment
+        amount: 0.1
+
+- type: reagent
+  id: KortanutMilk
+  name: reagent-name-kortanut-milk
+  group: Foods
+  desc: reagent-desc-kortanut-milk
+  physicalDesc: reagent-physical-desc-opaque
+  flavor: nutty #If possible, add milky flavour
+  color: brown #placeholder
+  recognizable: true
+  metabolisms:
+    Food:
+      effects:
+      - !type:SatiateThirst
+        factor: 0.5 
+      - !type:AdjustReagent
+        reagent: Nutriment
+        amount: 0.1

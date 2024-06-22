@@ -1609,3 +1609,34 @@
       Min: 4
       Max: 8
       PotencyDivisor: 30
+
+- type: seed
+  id: kortanut
+  name: seeds-kortanut-name
+  noun: seeds-noun-seeds
+  displayName: seeds-kortanut-display-name
+  plantRsi: Objects/Specific/Hydroponics/kortanut.rsi
+  packetPrototype: KortanutSeeds
+  productPrototypes:
+    - KortanutNut
+  harvestRepeat: Repeat
+  lifespan: 90
+  maturation: 8
+  production: 6
+  yield: 4
+  potency: 1
+  idealLight: 8
+  growthStages: 6
+  chemicals:
+    Vitamin:
+      Min: 1
+      Max: 4
+      PotencyDivisor: 25
+    KortanutMilk:
+      Min: 5
+      Max: 20
+      PotencyDivisor: 5
+    KortanutFlour:
+     Min: 5
+     Max: 20
+     PotencyDivisor: 5

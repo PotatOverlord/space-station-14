@@ -1297,6 +1297,80 @@
         - ReagentId: Protein
           Quantity: 1
 
+- type: entity
+  name: cleaned armorfish
+  parent: FoodMeatBase
+  id: FoodMeatArmorfish
+  description: An armorfish with its guts and shell removed, ready for use in cooking.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fishy
+  - type: Tag
+    tags:
+    - Raw
+    - Meat
+  - type: Sprite
+    state: cleaned-armorfish
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 3
+        - ReagentId: Fat
+          Quantity: 1
+
+- type: entity
+  name: filleted gunner jellyfish
+  parent: FoodMeatBase
+  id: FoodMeatGunnerJellyfishFillet
+  description: A gunner jellyfish with the stingers removed. Mildly hallucinogenic.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fishy
+  - type: Tag
+    tags:
+    - Raw
+    - Meat
+  - type: Sprite
+    state: jellyfish-fillet
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: MindbreakerToxin
+          Quantity: 5
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 2
+        - ReagentId: Fat
+          Quantity: 1
+
+- type: entity
+  name: raw moonfish fillet
+  parent: FoodMeatBase
+  id: FoodMeatMoonfish
+  description: A fillet of moonfish, which is like a space carp but smaller and native to planets and not filled with a murderous intent... so basically the same thing.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fishy
+  - type: Tag
+    tags:
+    - Raw
+    - Meat
+  - type: Sprite
+    state: moonfish-fillet
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: UncookedAnimalProteins
+          Quantity: 3
+        - ReagentId: Fat
+          Quantity: 2
+
 # Cooked
 
 - type: entity
@@ -1482,3 +1556,27 @@
           Quantity: 1
         - ReagentId: Protein
           Quantity: 1
+
+- type: entity
+  name: grilled moonfish fillet
+  parent: FoodMeatBase
+  id: FoodMeatMoonfishCooked
+  description: A slab of grilled moonfish. Traditionally served over scalloped roots with a wine-based sauce.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fishy
+  - type: Tag
+    tags:
+    - Meat
+  - type: Sprite
+    state: moonfish-cooked
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Protein
+          Quantity: 3
+

@@ -428,9 +428,6 @@
           Quantity: 1
         - ReagentId: Blackpepper
           Quantity: 1
-  - type: Tag
-    tags:
-    - Meat
 # Tastes like egg, salt, pepper.
 
 - type: entity
@@ -607,3 +604,426 @@
           Quantity: 4
         - ReagentId: Vitamin
           Quantity: 4
+
+- type: entity
+  name: black eggs
+  parent: FoodMealBase
+  id: FoodMealBlackEggs
+  description:  A country dish from the rural areas of the lizard homeland. Made with eggs, blood, and foraged greens. Traditionally eaten with rootbread and a spicy sauce. 
+  components:
+  - type: FlavorProfile
+    flavors:
+      - egg
+      - metallic
+      - greens
+  - type: Sprite
+    state: black-eggs
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Blood
+          Quantity: 3
+        - ReagentId: Vinegar
+          Quantity: 1
+  - type: Tag
+    tags:
+    - ReptilianFood
+
+- type: entity
+  name: blood sausage
+  parent: FoodMealBase
+  id: FoodMealBloodSausage
+  description: A coarse dry-cured blood sausage, traditionally made by farmers in the farmlands around the lizard capital. Similar in texture to old-Earth Spanish chorizo. 
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - blackpudding
+  - type: Sprite
+    state: blood-sausage
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: Blood
+          Quantity: 2
+        - ReagentId: Protein
+          Quantity: 4
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: eyeball and brain pate
+  parent: FoodMealBase
+  id: FoodMealEyeBrainPate
+  description: A thick pink puree made from finely chopped poached eyeballs and brains, fried onions, and fat. Lizards swear it's delicious!  
+  components:
+  - type: FlavorProfile
+    flavors:
+      - mindful
+  - type: Sprite
+    state: brain-pate
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Protein
+          Quantity: 6
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: fried blood sausage
+  parent: FoodMealBase
+  id: FoodMealFriedBloodSausage
+  description: A blood sausage, battered and deep fried. Commonly served with fries as a quick and simple snack on the streets of the lizard capital.   
+  components:
+  - type: FlavorProfile
+    flavors:
+      - blackpudding
+      - batter
+      - oily
+  - type: Sprite
+    state: fried-blood-sausage
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Protein
+          Quantity: 4
+        - ReagentId: Nutriment
+          Quantity: 3
+        - ReagentId: OilOlive
+          Quantity: 1
+  - type: Tag
+    tags:
+    - Meat
+
+
+- type: entity
+  name: headcheese
+  parent: FoodMealBase
+  id: FoodMealHeadcheese
+  description: A common food on the lizard homeworld, headcheese is traditionally made of an animal's head, with the organs removed, boiled until it falls apart, at which point it is collected, strained of moisture, salted heavily, packed into blocks, and left to dry and age for several months. The resulting hard block tastes similar to cheese.    
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - salty
+      - cheesy
+  - type: Sprite
+    state: headcheese
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Protein
+          Quantity: 10
+        - ReagentId: TableSalt
+          Quantity: 5
+        - ReagentId: Nutriment
+          Quantity: 2
+  - type: SliceableFood
+    slice: FoodMealHeadcheeseSlice
+  - type: Tag
+    tags:
+     - Meat
+
+- type: entity
+  name: headcheese
+  parent: FoodMealBase
+  id: FoodMealHeadcheeseSlice
+  description: A slice of headcheese. Delicious, if you're a lizard.   
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - salty
+      - cheesy
+  - type: Sprite
+    state: headcheese-slice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 4
+        reagents:
+        - ReagentId: Protein
+          Quantity: 2
+        - ReagentId: TableSalt
+          Quantity: 1
+        - ReagentId: Nutriment
+          Quantity: 0.4
+  - type: Tag
+    tags:
+     - Meat
+
+- type: entity
+  name: liver pate
+  parent: FoodMealBase
+  id: FoodMealLiverPate
+  description: A rich, meaty paste made from liver, meat, and a few additions for extra flavour.    
+  components:
+  - type: FlavorProfile
+    flavors:
+      - liver
+  - type: Sprite
+    state: liver-pate
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Protein
+          Quantity: 3
+        - ReagentId: Nutriment
+          Quantity: 1
+  - type: Tag
+    tags:
+     - Meat
+
+- type: entity
+  name: loaded poms-franzisks
+  parent: FoodMealBase
+  id: FoodMealLoadedFries
+  description: One of the many human foods to make its way to the lizards was french fries, which are called poms-franzisks in Draconic. When topped with barbecued meat and sauce, they make a hearty meal.     
+  components:
+  - type: FlavorProfile
+    flavors:
+      - bbq
+      - potatoes
+      - salty
+      - bbqmeat
+  - type: Sprite
+    state: loaded-fries
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Protein
+          Quantity: 4
+        - ReagentId: Nutriment
+          Quantity: 4
+  - type: Tag
+    tags:
+     - Meat
+
+- type: entity
+  name: moonfish caviar paste
+  parent: FoodMealBase
+  id: FoodMealMoonfishCaviar
+  description: A rich paste made from moonfish eggs. Generally the only way most lizards can get them, and used fairly heavily in coastal cooking.       
+  components:
+  - type: FlavorProfile
+    flavors:
+      - caviar
+  - type: Sprite
+    state: moonfish-caviar
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 5
+        reagents:
+        - ReagentId: Protein
+          Quantity: 3
+        - ReagentId: Nutriment
+          Quantity: 1
+  - type: Tag
+    tags:
+     - ReptilianFood
+
+- type: entity
+  name: moonfish demiglace
+  parent: FoodMealBase
+  id: FoodMealMoonfishDemiglace
+  description: A slab of beautifully seared moonfish on a bed of potatoes and carrots, with a wine and demiglace reduction on top. Simply marvelous.     
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fish
+      - potatoes
+      - carrot
+      - wine
+  - type: Sprite
+    state: moonfish-demiglace
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Protein
+          Quantity: 8
+        - ReagentId: Nutriment
+          Quantity: 6
+  - type: Tag
+    tags:
+     - Meat
+
+- type: entity
+  name: mushroomy stirfry
+  parent: FoodMealBase
+  id: FoodMealMushroomyStirfry
+  description: A medley of mushrooms, made to meet your monstrous munchies. Marvelous!      
+  components:
+  - type: FlavorProfile
+    flavors:
+      - marvelousmushrooms
+      - sublimeshrooms
+  - type: Sprite
+    state: mushroomy-stirfry
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Protein
+          Quantity: 2
+        - ReagentId: Nutriment
+          Quantity: 8
+  - type: Tag
+    tags:
+     - ReptilianFood
+
+- type: entity
+  name: nectar larvae
+  parent: FoodMealBase
+  id: FoodMealNectarLarvae
+  description: Little crispy larvae in a korta nectar based sweet and spicy sauce. Bugtastic!       
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - sweet
+      - spicy 
+  - type: Sprite
+    state: nectar-larvae
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Protein
+          Quantity: 5
+        - ReagentId: Nutriment
+          Quantity: 2
+        - ReagentId: KortaNectar
+          Quantity: 3
+        - ReagentId: CapsaicinOil
+          Quantity: 1
+  - type: Tag
+    tags:
+     - ReptilianFood
+
+- type: entity
+  name: patzikula
+  parent: FoodMealBase
+  id: FoodMealPatzikula
+  description: A smooth and spicy tomato-based sauce topped with eggs and baked. Delicious.        
+  components:
+  - type: FlavorProfile
+    flavors:
+      - egg
+      - tomato
+      - spicy 
+  - type: Sprite
+    state: patzikula
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: CapsaicinOil
+          Quantity: 2
+  - type: Tag
+    tags:
+     - ReptilianFood
+
+- type: entity
+  name: sauerkraut
+  parent: FoodMealBase
+  id: FoodMealSauerkraut
+  description: Pickled cabbage, as made famous by Germans, and which has become common in lizard cooking, where it is known as Zauerkrat.      
+  components:
+  - type: FlavorProfile
+    flavors:
+      - cabbage
+      - acid 
+  - type: Sprite
+    state: sauerkraut
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 8
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+  - type: Tag
+    tags:
+     - ReptilianFood
+
+- type: entity
+  name: Zagosk surf 'n' turf smorgasbord 
+  parent: FoodMealBase
+  id: FoodMealSurfNTurf
+  description: A massive platter of the lizard's finest meat and seafood, typically shared by groups at the beach. Of course, nothing's stopping you eating it on your own... fatass.        
+  components:
+  - type: FlavorProfile
+    flavors:
+      - surf
+      - turf
+      - meaty
+      - bbqmeat
+      - fishy
+      - spicy 
+  - type: Sprite
+    state: surf-n-turf
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 30
+        reagents:
+        - ReagentId: Protein
+          Quantity: 10
+        - ReagentId: Nutriment
+          Quantity: 15
+  - type: Tag
+    tags:
+     - Meat
+
+- type: entity
+  name: Tsatsikh 
+  parent: FoodMealBase
+  id: FoodMealTsatsikh
+  description: A Tiziran dish consisting of spiced ground offal, stuffed into a stomach and boiled. Pretty foul to anyone who's not used to the taste.         
+  components:
+  - type: FlavorProfile
+    flavors:
+      - minceorgans 
+  - type: Sprite
+    state: tsatsikh
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Protein
+          Quantity: 15
+  - type: Tag
+    tags:
+     - Meat

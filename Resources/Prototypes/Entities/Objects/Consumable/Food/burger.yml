@@ -919,4 +919,189 @@
   - type: Tag
     tags:
     - Meat
-    
+
+- type: entity
+  name: bun
+  parent: FoodBreadSliceBase
+  id: FoodBreadRootRoll
+  description: The equivalent to a burgerbun, this mini rootbread fits perfectly in your hand.
+  components:
+  - type: Food
+  - type: Sprite
+    state: rootroll
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3.4
+        - ReagentId: Vitamin
+          Quantity: 1.7
+        - ReagentId: Protein
+          Quantity: 0.7
+
+- type: entity
+  name: rootburger
+  parent: FoodBurgerBase
+  id: FoodBurgerRootBurger
+  description: It's like a classic burger, but with extra lizard style!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - meaty
+  - type: Sprite
+    state: rootburger
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 4
+        - ReagentId: Vitamin
+          Quantity: 7
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: chicken rootroll
+  parent: FoodBurgerBase
+  id: FoodBurgerRootChicken
+  description: 
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - chicken
+  - type: Sprite
+    state: rootchicken
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 6
+        - ReagentId: Protein
+          Quantity: 6
+        - ReagentId: Vitamin
+          Quantity: 8
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: emperor rootroll
+  parent: FoodBurgerBase
+  id: FoodBurgerRootEmperor
+  description: A popular sandwich on the lizard homeworld, named in honour of the Imperial family. 
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - cheesy
+      - liver
+      - caviar
+  - type: Sprite
+    state: rootemperor
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 1
+        - ReagentId: Protein
+          Quantity: 4 #these are all arbitrary numbers I have no idea what I'm doing
+        - ReagentId: Vitamin
+          Quantity: 12
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: fish rootroll
+  parent: FoodBurgerBase
+  id: FoodBurgerRootfish
+  description: smells a bit... fishy. And nutty but that's none of your business.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - fishy
+  - type: Sprite
+    state: rootfish
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 7
+        - ReagentId: Protein
+          Quantity: 3
+        - ReagentId: Vitamin
+          Quantity: 10
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: rootguffin
+  parent: FoodBurgerBase
+  id: FoodBurgerRootGuffin
+  description: A slightly more expensive, greasy imitation of an eggs benedict.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - muffin
+      - egg
+  - type: Sprite
+    state: rootguffin
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 2
+        - ReagentId: Vitamin
+          Quantity: 3
+  - type: Tag
+    tags:
+    - ReptilianFood
+
+- type: entity
+  name: rootroll wid da rat in it
+  parent: FoodBurgerBase
+  id: FoodBurgerRootRat
+  description: The Ultimate Lizard Food. We peaked here. All downhill now...
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - meaty
+  - type: Sprite
+    state: rootburger
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Meat

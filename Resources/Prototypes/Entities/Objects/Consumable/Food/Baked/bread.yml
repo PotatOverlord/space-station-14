@@ -848,3 +848,68 @@
     damage:
       groups:
         Brute: 1
+
+- type: entity
+  name: rootbread
+  parent: FoodBreadBase
+  id: FoodBreadRoot
+  description: Bread made with nuts, egg and tubers. a lizard's preferred loaf.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - potatoes 
+      - bread
+      - egg
+  - type: Food
+  - type: Sprite
+    state: rootbread
+  - type: SliceableFood
+    slice: FoodBreadRootSlice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 45
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 2
+  - type: Tag
+    tags:
+    - Bread
+    - ReptilianFood 
+
+- type: entity
+  name: rootbread slice
+  parent: FoodBreadSliceBase
+  id: FoodBreadRootSlice
+  description: A slice of the nutty, slightly spicy bread preferred by lizards.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - potatoes
+      - bread
+      - egg
+  - type: Food
+  - type: Sprite
+    state: rootbread-slice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 3.4
+        - ReagentId: Vitamin
+          Quantity: 1.7
+        - ReagentId: Protein
+          Quantity: 0.7
+  - type: Tag
+    tags:
+    - Bread
+    - ReptilianFood
+    - Slice

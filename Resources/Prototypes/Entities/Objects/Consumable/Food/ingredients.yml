@@ -666,3 +666,87 @@
       reagents:
       - ReagentId: CocoaPowder
         Quantity: 2
+
+- type: entity
+  name: rootdough
+  parent: FoodBakingBase
+  id: FoodDoughRoot
+  description: A root based dough, made with nuts and tubers. Used in a wide range of Tiziran cooking. 
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - raw-egg
+      - potatoes
+  - type: Sprite
+    state: rootdough
+  - type: SliceableFood
+    count: 3
+    slice: FoodDoughRootSlice
+  - type: Construction
+    graph: Root
+    node: start
+  - type: Tag
+    tags:
+    - ReptilianFood
+
+
+- type: entity
+  name: rootdough slice
+  parent: FoodBakingBase
+  id: FoodDoughRootSlice
+  description: A slice of rootdough.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - potatoes
+      - raw-egg 
+  - type: Sprite
+    state: rootdough-slice
+  - type: Tag
+    tags:
+    - Slice
+    - ReptilianFood
+
+- type: entity
+  name: flattened rootdough
+  parent: FoodBakingBase
+  id: FoodDoughRootFlat
+  description: A flattened rootdough, similar to pizza dough.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - raw-egg
+      - potatoes
+  - type: Sprite
+    state: rootdough-flat
+  - type: Construction
+    graph: Root
+    node: flat
+  - type: Tag
+    tags:
+    - ReptilianFood
+
+- type: entity
+  parent: FoodMealBase
+  id: FoodEggMoonfish
+  name: moonfish eggs
+  description: The moonfish lays large, transparent white eggs which are prized in lizard cooking. Their flavour is similar to caviar, but generally is described as deeper and more complex.
+  components:
+  - type: Sprite
+    state: moonfish-eggs
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 6
+        reagents:
+        - ReagentId: Protein
+          Quantity: 3
+  - type: FlavorProfile
+    flavours:
+      - caviar 
+  - type: Tag
+    tags:
+    - Meat 

@@ -1,0 +1,13 @@
+- type: constructionGraph
+  id: Root
+  start: start
+  graph:
+  - node: start
+    entity: FoodDoughRootFlat
+    edges:
+    - to: flat
+      steps:
+      - tool: Rolling
+        doAfter: 1
+  - node: flat
+    entity: FoodDoughFlat

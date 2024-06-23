@@ -180,6 +180,16 @@
   description: flavor-base-mindful
 
 - type: flavor
+  id: greens
+  flavorType: Base
+  description: flavor-base-greens
+
+- type: flavour
+  id: herb
+  flavourType: Base
+  description: flavour-base-herb
+
+- type: flavor
   id: mustard
   flavorType: Complex
   description: flavor-complex-mustard
@@ -1103,3 +1113,63 @@
   id: paintthinner
   flavorType: Complex
   description: flavor-complex-paint-thinner
+
+- type: flavor
+  id: blackpudding
+  flavorType: Complex
+  description: flavor-complex-black-pudding
+
+- type: flavor
+  id: korta
+  flavorType: Complex
+  description: flavor-complex-korta
+
+- type: flavor
+  id: liver
+  flavorType: Complex
+  description: flavor-complex-liver
+
+- type: flavor
+  id: lungs
+  flavorType: Complex
+  description: flavor-complex-lungs
+
+- type: flavor
+  id: bbq
+  flavorType: Complex
+  description: flavor-complex-bbq-sauce
+
+- type: flavor
+  id: bbqmeat
+  flavorType: Complex
+  description: flavor-complex-bbq-meat
+
+- type: flavor
+  id: caviar
+  flavorType: Complex
+  description: flavor-complex-caviar
+
+- type: flavor
+  id: marvelousmushrooms
+  flavorType: Complex
+  description: flavor-complex-marvelous-mushrooms
+
+- type: flavor
+  id: sublimeshrooms
+  flavorType: Complex
+  description: flavor-complex-sublime-shrooms
+  
+- type: flavor
+  id: surf
+  flavorType: Complex
+  description: flavor-complex-surf
+
+- type: flavor
+  id: turf
+  flavorType: Complex
+  description: flavor-complex-turf
+
+- type: flavor
+  id: minceorgans
+  flavorType: Complex
+  description: flabor-complex-minceorgans

@@ -193,6 +193,11 @@
   id: buttery
   flavorType: Base
   description: flavor-base-buttery
+    
+- type: flavor
+  id: vinegar
+  flavorType: Base
+  description: flavor-base-vinegar
 
 - type: flavor
   id: mustard
@@ -1183,3 +1188,13 @@
   id: reducedwine
   flavorType: Complex
   description: flavor-complex-reduced-wine
+  
+- type: flavor
+  id: gnocchi
+  flavorType: Complex
+  description: flavor-complex-gnocchi
+
+- type: flavor
+  id: snails
+  flavorType: Complex
+  description: flavor-complex-snails

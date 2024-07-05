@@ -111,7 +111,7 @@
   group: Foods
   desc: reagent-desc-vinegar
   physicalDesc: reagent-physical-desc-sour
-  flavor: bitter
+  flavor: vinegar
   color: tan
   recognizable: true
   metabolisms:

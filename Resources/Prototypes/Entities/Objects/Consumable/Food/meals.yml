@@ -828,7 +828,9 @@
   components:
   - type: FlavorProfile
     flavors:
-      - caviar
+      - salty
+      - fishy
+      - buttery
   - type: Sprite
     state: moonfish-caviar
   - type: SolutionContainerManager
@@ -852,10 +854,10 @@
   components:
   - type: FlavorProfile
     flavors:
-      - fish
+      - fishy
       - potatoes
       - carrot
-      - wine
+      - reducedwine
   - type: Sprite
     state: moonfish-demiglace
   - type: SolutionContainerManager

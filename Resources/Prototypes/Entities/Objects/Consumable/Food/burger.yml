@@ -920,15 +920,19 @@
     tags:
     - Meat
 
+#Here be dragons
+
 - type: entity
-  name: bun
+  name: Rootroll
   parent: FoodBreadSliceBase
-  id: FoodBreadRootRoll
-  description: The equivalent to a burgerbun, this mini rootbread fits perfectly in your hand.
+  id: FoodBreadRootroll
+  description: The equivalent to a burger bun, this mini rootbread fits perfectly in your hand.
   components:
   - type: Food
   - type: Sprite
-    state: rootroll
+    sprite: Objects/Consumable/Food/burger.rsi
+    layers:
+    - state: rootroll
   - type: SolutionContainerManager
     solutions:
       food:
@@ -940,6 +944,9 @@
           Quantity: 1.7
         - ReagentId: Protein
           Quantity: 0.7
+  - type: Tag
+    tags:
+    - ReptilianFood
 
 - type: entity
   name: rootburger
@@ -972,7 +979,7 @@
   name: chicken rootroll
   parent: FoodBurgerBase
   id: FoodBurgerRootChicken
-  description: 
+  description: #todo
   components:
   - type: FlavorProfile
     flavors:
@@ -999,7 +1006,7 @@
   name: emperor rootroll
   parent: FoodBurgerBase
   id: FoodBurgerRootEmperor
-  description: A popular sandwich on the lizard homeworld, named in honour of the Imperial family. 
+  description: A popular sandwich on the lizard homeworld, named in honour of the Imperial family. # might be making lore creep over from common core a bit, but I don't think it's too much
   components:
   - type: FlavorProfile
     flavors:
@@ -1028,7 +1035,7 @@
   name: fish rootroll
   parent: FoodBurgerBase
   id: FoodBurgerRootfish
-  description: smells a bit... fishy. And nutty but that's none of your business.
+  description: #todo
   components:
   - type: FlavorProfile
     flavors:
@@ -1080,7 +1087,7 @@
     - ReptilianFood
 
 - type: entity
-  name: rootroll wid da rat in it
+  name: ratroll
   parent: FoodBurgerBase
   id: FoodBurgerRootRat
   description: The Ultimate Lizard Food. We peaked here. All downhill now...
@@ -1090,7 +1097,7 @@
       - korta
       - meaty
   - type: Sprite
-    state: rootburger
+    state: rootrat
   - type: SolutionContainerManager
     solutions:
       food:

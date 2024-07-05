@@ -184,10 +184,15 @@
   flavorType: Base
   description: flavor-base-greens
 
-- type: flavour
+- type: flavor
   id: herb
-  flavourType: Base
-  description: flavour-base-herb
+  flavorType: Base
+  description: flavor-base-herb
+  
+- type: flavor
+  id: buttery
+  flavorType: Base
+  description: flavor-base-buttery
 
 - type: flavor
   id: mustard
@@ -1145,11 +1150,6 @@
   description: flavor-complex-bbq-meat
 
 - type: flavor
-  id: caviar
-  flavorType: Complex
-  description: flavor-complex-caviar
-
-- type: flavor
   id: marvelousmushrooms
   flavorType: Complex
   description: flavor-complex-marvelous-mushrooms
@@ -1172,4 +1172,14 @@
 - type: flavor
   id: minceorgans
   flavorType: Complex
-  description: flabor-complex-minceorgans
+  description: flavor-complex-minceorgans
+
+- type: flavor
+  id: bonebroth
+  flavorType: Complex
+  description: flavor-complex-bone-broth
+
+- type: flavor
+  id: reducedwine
+  flavorType: Complex
+  description: flavor-complex-reduced-wine

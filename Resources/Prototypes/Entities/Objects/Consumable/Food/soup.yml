@@ -1225,3 +1225,32 @@
     - Fruit
     - Soup
 # Tastes like bungo, hot curry.
+
+- type: entity
+  name: atrakor dumpling soup
+  parent: FoodBowlBase
+  id: FoodSoupAtrakor
+  description: A bowl of rich, meaty dumpling soup, traditionally served during the festival of Atrakor's Might on the lizard homeworld. The dumplings are shaped like the Night Sky Lord himself. #todo: figure out how to add this without implementing species lore because that's too much effort
+  components:
+  - type: FlavorProfile
+    flavors:
+      - bonebroth
+      - onion
+      - potatoes
+  - type: Sprite
+    layers:
+    - state: bowl
+    - state: atrakor
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+          - ReagentId: Nutriment
+            Quantity: 6
+          - ReagentId: Vitamin
+            Quantity: 6
+  - type: Tag
+    tags:
+    - Fruit
+    - Soup

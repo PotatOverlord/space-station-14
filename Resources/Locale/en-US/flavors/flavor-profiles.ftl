@@ -50,8 +50,9 @@ flavor-base-horrible = horrible
 # lmao
 flavor-base-terrible = terrible
 flavor-base-mindful = mindful
-flavour-base-greens = greens
-flavour-base-herb = herby
+flavor-base-greens = greens
+flavor-base-herb = herby
+flavor-base-buttery = buttery
 
 # Complex flavors. Put a flavor here when you want something that's more
 # specific.
@@ -130,6 +131,7 @@ flavor-complex-vegetables = like vegetables
 flavor-complex-korta = like an earthy heat
 flavor-complex-liver = like liver
 flavor-complex-lungs = like lungs
+flavor-complex-bone-broth = like bone broth
 
 ## Complex foodstuffs (cooked foods, joke flavors, etc)
 
@@ -177,14 +179,14 @@ flavor-complex-violets = like violets
 flavor-complex-pyrotton = like a burning mouth
 flavor-complex-mothballs = like mothballs
 flavor-complex-paint-thinner = like paint thinner
-flavour-complex-black-pudding = like black pudding
-flavour-complex-bbq-meat = like barbequed meat
-flavour-complex-caviar = like fish eggs. What did you expect? Rich people have no taste.
-flavour-complex-marvelous-mushrooms = like marvelous mushrooms
-flavour-complex-sublime-shrooms = like sublime shrooms
-flavour-complex-surf = like surf
-flavour-complex-turf = like turf
-flavour-complex-mince-organs = like minced organs
+flavor-complex-black-pudding = like black pudding
+flavor-complex-bbq-meat = like barbequed meat
+flavor-complex-marvelous-mushrooms = like marvelous mushrooms
+flavor-complex-sublime-shrooms = like sublime shrooms
+flavor-complex-surf = like surf
+flavor-complex-turf = like turf
+flavor-complex-mince-organs = like minced organs
+flavor-complex-reduced-wine = like intense grape rinds
 
 # Drink-specific flavors.
 

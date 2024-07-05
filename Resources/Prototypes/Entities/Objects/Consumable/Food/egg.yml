@@ -137,3 +137,27 @@
   - type: Construction
     graph: Egg
     node: boiled
+
+
+
+- type: entity
+  parent: FoodEggBase
+  id: FoodEggMoonfish
+  name: moonfish eggs
+  description: The moonfish lays large, transparent white eggs which are prized in lizard cooking. Their flavour is similar to caviar, but generally is described as deeper and more complex.
+  components:
+  - type: Sprite
+    state: moonfish-eggs
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 6
+        reagents:
+        - ReagentId: Protein
+          Quantity: 3
+  - type: FlavorProfile
+    flavours:
+      - caviar 
+  - type: Tag
+    tags:
+    - Meat 

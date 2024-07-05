@@ -728,25 +728,20 @@
   - type: Tag
     tags:
     - ReptilianFood
-
+    
 - type: entity
-  parent: FoodMealBase
-  id: FoodEggMoonfish
-  name: moonfish eggs
-  description: The moonfish lays large, transparent white eggs which are prized in lizard cooking. Their flavour is similar to caviar, but generally is described as deeper and more complex.
+  name: rootdough dumplings
+  parent: FoodBakingBase
+  id: FoodDoughRootDumpling
+  description: Mashed root vegetables, mixed with korta flour and boiled to produce a large, round and slightly spicy dumpling. Commonly eaten in soup. 
   components:
-  - type: Sprite
-    state: moonfish-eggs
-  - type: SolutionContainerManager
-    solutions:
-      food:
-        maxVol: 6
-        reagents:
-        - ReagentId: Protein
-          Quantity: 3
   - type: FlavorProfile
-    flavours:
-      - caviar 
+    flavors:
+      - korta
+      - potatoes
+      - raw-egg 
+  - type: Sprite
+    state: rootdough-dumplings
   - type: Tag
     tags:
-    - Meat 
+    - ReptilianFood

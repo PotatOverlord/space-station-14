@@ -1,0 +1,289 @@
+# When adding new food also add to random spawner located in Resources\Prototypes\Entities\Markers\Spawners\Random\Food_Drinks\food_meal.yml & food_single.yml
+# Base
+
+- type: entity
+  parent: FoodInjectableBase
+  id: FoodFlatbreadBase
+  abstract: true
+  components:
+  - type: FlavorProfile
+    flavors:
+      - oily
+      - bread
+  - type: Food
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Baked/flatbread.rsi
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 30
+        - ReagentId: Vitamin
+          Quantity: 5 
+  - type: Item
+    size: Normal
+  - type: Tag
+    tags:
+    - ReptilianFood
+
+- type: entity
+  name: fish flatbread
+  parent: FoodFlatbreadBase
+  id: FoodFlatbreadFish
+  description: Superengine delamination, clown ops, too cold outside, I just want to grill for Weh's sake!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - fishy
+      - bbqsauce
+      - oily
+      - korta
+  - type: Sprite
+    state: fish-flatbread
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 25
+        - ReagentId: Vitamin
+          Quantity: 10
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: imperial flatbread
+  parent: FoodFlatbreadBase
+  id: FoodFlatbreadImperial
+  description: A flatbread topped with pate, pickled vegetables, and cubed headcheese. Not very suited to anyone's tastes but the lizards. 
+  components:
+  - type: FlavorProfile
+    flavors:
+      - liver
+      - cheesy
+      - cabbage
+      - korta
+      - oily 
+  - type: Sprite
+    state: imperial-flatbread
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 15
+        - ReagentId: Protein
+          Quantity: 10  
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: italic flatbread
+  parent: FoodFlatbreadBase
+  id: FoodFlatbreadItalic
+  description: The introduction of human foods to the lizards led to an advancement in lizard cooking- the Italic flatbread is now a common sight on the menus of takeout stores on the planet.  
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - meatballs
+      - tomato
+      - garlic
+      - korta
+      - oily 
+  - type: Sprite
+    state: italic-flatbread
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 10  
+  - type: Tag
+    tags:
+    - Meat
+
+#- type: entity
+#  name: mushroom flatbread
+#  parent: FoodFlatbreadBase
+#  id: FoodFlatbreadMushroom
+#  description: A simple alternative to the Italic flatbread, for when you've already filled up on meat elsewhere.
+#  components:
+#  - type: FlavorProfile
+#    flavors:
+#      - mushroom
+#      - tomato
+#      - garlic
+#      - korta
+#      - oily 
+#  - type: Sprite
+#    state: mushroom-flatbread
+#  - type: SolutionContainerManager
+#    solutions:
+#      food:
+#        maxVol: 40
+#        reagents:
+#        - ReagentId: Nutriment
+#          Quantity: 15
+#        - ReagentId: Vitamin
+#          Quantity: 10
+#        - ReagentId: Protein
+#          Quantity: 5  
+#  - type: Tag
+#    tags:
+#    - ReptilianFood
+# Supposed to be an alternative to italic, same sprite though
+- type: entity
+  name: nutty flatbread
+  parent: FoodFlatbreadBase
+  id: FoodFlatbreadNutty
+  description: Modern advances in cuisine now allow for a double helping of the delicious taste of korta nuts, both as the base and as a topping on this flatbread.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - oily 
+  - type: Sprite
+    state: nutty-flatbread
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+        - ReagentId: Vitamin
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 5  
+  - type: Tag
+    tags:
+    - ReptilianFood
+
+- type: entity
+  name: meatlovers flatbread
+  parent: FoodFlatbreadBase
+  id: FoodFlatbreadRaw
+  description: dly enough, this lizard dish is actually a favorite of some health-minded humans.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - metallic
+      - korta
+      - oily 
+  - type: Sprite
+    state: rawmeat-flatbread
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 50
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Vitamin
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 20 
+        - ReagentId: Blood
+          Quantity: 10  
+  - type: Tag
+    tags:
+    - Meat
+
+
+- type: entity
+  name: rustic flatbread
+  parent: FoodFlatbreadBase
+  id: FoodFlatbreadRustic
+  description: A simple lizard country dish, popular as a side to meat or fish dishes. Topped with herbs and oil.   
+  components:
+  - type: FlavorProfile
+    flavors:
+      - herb
+      - korta
+      - oily 
+  - type: Sprite
+    state: rustic-flatbread
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 10
+        - ReagentId: Vitamin
+          Quantity: 20
+  - type: Tag
+    tags:
+    - ReptilianFood
+
+- type: entity
+  name: zmorgast flatbread # based on Smörgåstårta
+  parent: FoodFlatbreadBase
+  id: FoodFlatbreadZmorgast
+  description: A lizard's spin on the original Swedish sandwich cake, the Zmorgast is a common dish at family gatherings.  
+  components:
+  - type: FlavorProfile
+    flavors:
+      - bread
+      - liver
+      - family 
+  - type: Sprite
+    state: zmorgast-flatbread
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+        - ReagentId: Vitamin
+          Quantity: 7
+        - ReagentId: Protein
+          Quantity: 7
+  - type: Tag
+    tags:
+    - ReptilianFood
+
+- type: entity
+  name: stinging flatbread
+  parent: FoodFlatbreadBase
+  id: FoodFlatbreadStinging
+  description: The electric mix of jellyfish and bee larva makes for a flavor sensation that leaves you asking for more! 
+  components:
+  - type: FlavorProfile
+    flavors:
+      - slimy
+      - sweet
+      - stinging
+      - korta
+  - type: Sprite
+    state: stinging-flatbread
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 40
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+        - ReagentId: Protein
+          Quantity: 10
+        #- ReagentId: Licoxide
+        #  Quantity: 5
+  - type: Tag
+    tags:
+    - ReptilianFood

@@ -137,36 +137,6 @@
         {
             "name": "box-inhand-left",
             "directions": 4
-        },
-        {
-            "name": "fish-flatbread"
-        },
-        {
-            "name": "imperial-flatbread"
-        },
-        {
-            "name": "italic-flatbread"
-        },
-        {
-            "name": "mushroom-flatbread"
-        },
-        {
-            "name": "nutty-flatbread"
-        },
-        {
-            "name": "rawmeat-flatbread"
-        },
-        {
-            "name": "root-flatbread"
-        },
-        {
-            "name": "rustic-flatbread"
-        },
-        {
-            "name": "stinging-flatbread"
-        },
-        {
-            "name": "zmorgast-flatbread"
         }
     ]
 }

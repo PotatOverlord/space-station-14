@@ -712,7 +712,7 @@
 
 
 - type: entity
-  name: headcheese
+  name: headcheese block
   parent: FoodMealBase
   id: FoodMealHeadcheese
   description: A common food on the lizard homeworld, headcheese is traditionally made of an animal's head, with the organs removed, boiled until it falls apart, at which point it is collected, strained of moisture, salted heavily, packed into blocks, and left to dry and age for several months. The resulting hard block tastes similar to cheese.    
@@ -745,7 +745,7 @@
   name: headcheese
   parent: FoodMealBase
   id: FoodMealHeadcheeseSlice
-  description: A slice of headcheese. Delicious, if you're a lizard.   
+  description: A slice of headcheese, useful for making sandwiches and snacks. Or surviving the cold winters on the lizard homeworld.  
   components:
   - type: FlavorProfile
     flavors:
@@ -765,6 +765,31 @@
           Quantity: 1
         - ReagentId: Nutriment
           Quantity: 0.4
+  - type: Tag
+    tags:
+     - Meat
+
+- type: entity
+  name: crispy headcheese
+  parent: FoodMealBase
+  id: FoodMealCrispyHeadcheeseSlice
+  description: A delicious snack from the streets of Zagoskeld, consisting of headcheese coated in rootbread breadcrumbs. Commonly served with fries.  
+  components:
+  - type: FlavorProfile
+    flavors:
+      - cheesy
+      - oily 
+  - type: Sprite
+    state: crispy-headcheese
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Protein
+          Quantity: 3
+        - ReagentID: nutrriment
+          Quantity: 2
   - type: Tag
     tags:
      - Meat

@@ -1,0 +1,41 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "taken from tgstation at https://github.com/tgstation/tgstation/commit/b05af8b31dc7200b0a1a6ac522a9e60cbcac6600",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "fish-flatbread"
+        },
+        {
+            "name": "imperial-flatbread"
+        },
+        {
+            "name": "italic-flatbread"
+        },
+        {
+            "name": "mushroom-flatbread"
+        },
+        {
+            "name": "nutty-flatbread"
+        },
+        {
+            "name": "rawmeat-flatbread"
+        },
+        {
+            "name": "root-flatbread"
+        },
+        {
+            "name": "rustic-flatbread"
+        },
+        {
+            "name": "stinging-flatbread"
+        },
+        {
+            "name": "zmorgast-flatbread"
+        }
+    ]
+}

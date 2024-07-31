@@ -157,7 +157,9 @@
           Quantity: 3
   - type: FlavorProfile
     flavours:
-      - caviar 
+      - salty
+      - fishy #Rich people on google my beloved
+      - buttery
   - type: Tag
     tags:
     - Meat 

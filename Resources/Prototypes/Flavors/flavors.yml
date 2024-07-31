@@ -1198,3 +1198,8 @@
   id: gnocchi
   flavorType: Complex
   description: flavor-complex-gnocchi
+
+- type: flavor
+  id: family
+  flavorType: Complex
+  description: flavor-complex-family

@@ -137,6 +137,7 @@ flavor-complex-mince-organs = like minced organs
 flavor-complex-reduced-wine = like intense grape rinds
 flavor-complex-bone-broth = like bone broth
 flavor-complex-gnocchi = like gnocchi
+flavor-complex-stinging = like stinging
 
 ## Complex foodstuffs (cooked foods, joke flavors, etc)
 
@@ -190,6 +191,7 @@ flavor-complex-marvelous-mushrooms = like marvelous mushrooms
 flavor-complex-sublime-shrooms = like sublime shrooms
 flavor-complex-surf = like surf
 flavor-complex-turf = like turf
+flavor-complex-family = like family
 
 # Drink-specific flavors.
 

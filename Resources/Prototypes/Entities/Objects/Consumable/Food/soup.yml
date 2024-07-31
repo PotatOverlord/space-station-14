@@ -1374,14 +1374,14 @@
     - Soup
 
 - type: entity
-  name: desert snail cocleas
+  name: desert snail escargot
   parent: FoodBowlBase
-  id: FoodSnailCocleas
+  id: FoodSnailEscargot
   description: Another example of cultural crossover between lizards and humans, desert snail escargot is closer to the Roman dish cocleas than the contemporary French escargot. It's a common street food in the desert cities.  
   components:
   - type: FlavorProfile
     flavors:
-      - snails
+      - earthy
       - oily
       - garlic
   - type: Sprite
@@ -1391,10 +1391,10 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 15
+        maxVol: 20
         reagents:
           - ReagentId: Nutriment
-            Quantity: 6
+            Quantity: 8
           - ReagentId: Vitamin
             Quantity: 6
   - type: Tag

@@ -200,6 +200,11 @@
   description: flavor-base-vinegar
 
 - type: flavor
+  id: earthy
+  flavorType: Base
+  description: flavor-base-earthy
+
+- type: flavor
   id: mustard
   flavorType: Complex
   description: flavor-complex-mustard
@@ -1193,8 +1198,3 @@
   id: gnocchi
   flavorType: Complex
   description: flavor-complex-gnocchi
-
-- type: flavor
-  id: snails
-  flavorType: Complex
-  description: flavor-complex-snails

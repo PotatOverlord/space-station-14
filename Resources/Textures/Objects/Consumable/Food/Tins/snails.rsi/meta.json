@@ -1,0 +1,20 @@
+{
+    "version": 1,
+    "license": "CC-BY-SA-3.0",
+    "copyright": "icon.png taken from tgstation at https://github.com/tgstation/tgstation/commit/b05af8b31dc7200b0a1a6ac522a9e60cbcac6600, trash.png and icon-open.png taken from tgstation at https://github.com/tgstation/tgstation/commit/64de1617b2ebb7ac5f976bfd7270b025e20cec03",
+    "size": {
+        "x": 32,
+        "y": 32
+    },
+    "states": [
+        {
+            "name": "icon"
+        },
+        {
+            "name": "icon-open"
+        },
+        {
+            "name": "trash"
+        }
+    ]
+}

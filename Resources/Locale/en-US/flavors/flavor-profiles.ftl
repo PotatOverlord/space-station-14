@@ -54,6 +54,7 @@ flavor-base-greens = greens
 flavor-base-herb = herby
 flavor-base-buttery = buttery
 flavor-base-vinegar = vinegar
+flavor-base-earthy = earthy
 
 # Complex flavors. Put a flavor here when you want something that's more
 # specific.
@@ -136,7 +137,6 @@ flavor-complex-mince-organs = like minced organs
 flavor-complex-reduced-wine = like intense grape rinds
 flavor-complex-bone-broth = like bone broth
 flavor-complex-gnocchi = like gnocchi
-flavor-complex-snails = like snails
 
 ## Complex foodstuffs (cooked foods, joke flavors, etc)
 

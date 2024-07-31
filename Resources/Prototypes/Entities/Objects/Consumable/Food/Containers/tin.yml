@@ -188,3 +188,116 @@
   components:
   - type: Sprite
     sprite: Objects/Consumable/Food/Tins/meat.rsi
+
+#Lizard canned goods
+
+- type: entity
+  parent: FoodTinBase
+  id: FoodTinJellyfish
+  name: canned gunner jellyfish
+  description: A can of gunner jellyfish packed in brine. Contains a mild hallucinogen which is destroyed by cooking.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/jellyfish.rsi
+  - type: Openable
+    openableByHand: true
+  - type: FlavorProfile
+    flavors:
+    - meaty
+    - salty
+    - gunpowder
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: MindbreakerToxin
+          Quantity: 2
+  - type: Food
+    trash: FoodTinJellyfishTrash
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: FoodTinJellyfishTrash
+  name: canned gunner jellyfish
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/jellyfish.rsi
+
+- type: entity
+  parent: FoodTinBase
+  id: FoodTinSnails
+  name: canned desert snails
+  description: Giant snails from the Tiziran desert, packaged in brine. Shells included. Probably best not eaten raw, unless you're a lizard.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/snails.rsi
+  - type: Openable
+    openableByHand: true
+  - type: FlavorProfile
+    flavors:
+    - earthy
+    - slimy
+    - salty
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: TableSalt
+          Quantity: 2
+  - type: Food
+    trash: FoodTinSnailsTrash
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: FoodTinSnailsTrash
+  name: canned desert snails
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/snails.rsi
+
+- type: entity
+  parent: FoodTinBase
+  id: FoodTinLarvae
+  name: canned bee larvae
+  description: A can of bee larva packaged in honey. Probably appetizing to someone.
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/larvae.rsi
+  - type: Openable
+    openableByHand: true
+  - type: FlavorProfile
+    flavors:
+    - sweet
+    - slimy
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+  - type: Food
+    trash: FoodTinLarvaeTrash
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  parent: FoodTinBaseTrash
+  id: FoodTinLarvaeTrash
+  name: canned bee larvae
+  components:
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Tins/snails.rsi

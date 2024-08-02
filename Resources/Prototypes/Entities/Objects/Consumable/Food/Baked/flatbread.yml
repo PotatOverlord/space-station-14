@@ -282,8 +282,8 @@
           Quantity: 20
         - ReagentId: Protein
           Quantity: 10
-        #- ReagentId: Licoxide
-        #  Quantity: 5
+        #- ReagentId: Licoxide #It makes sense, but where does it come from? probably not worth it, or reduce to like 1u
+        #  Quantity: 5 
   - type: Tag
     tags:
     - ReptilianFood

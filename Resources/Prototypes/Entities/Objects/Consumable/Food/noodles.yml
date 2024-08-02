@@ -169,3 +169,118 @@
         - ReagentId: Vitamin
           Quantity: 1
 # Tastes like pasta, butter.
+
+- type: entity
+  name: nizaya pasta
+  parent: FoodNoodlesBase
+  id: FoodNoodlesNizaya
+  description: A form of root and nut pasta originally native to the oceanside regions of the lizard homeworld. It's similar in texture and appearance to gnocchi.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - gnocchi
+  - type: Sprite
+    state: nizaya
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 1
+
+- type: entity
+  name: desert snail nizaya
+  parent: FoodNoodlesBase
+  id: FoodNoodlesNizayaSnails
+  description: high class pasta dish from The lizard homeworld's vineyard region of Valyngia. Traditionally made with only the finest lizard wine... but the human swill will do, in a pinch.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - earthy
+      - gnocchi
+      - reducedwine 
+  - type: Sprite
+    state: snail-nizaya
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 1
+
+- type: entity
+  name: garlic and oil nizaya
+  parent: FoodNoodlesBase
+  id: FoodNoodlesNizayaGarlic
+  description: A lizard adaptation of the Italian pasta dish, aglio e olio, made with nizaya pasta.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - garlic
+      - gnocchi
+      - oily 
+  - type: Sprite
+    state: garlic-nizaya
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 1
+
+- type: entity
+  name: demit nizaya
+  parent: FoodNoodlesBase
+  id: FoodNoodlesNizayaDemit
+  description: A sweet, creamy nizaya pasta dish made with korta milk and nectar.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - peppery
+      - gnocchi
+      - vegetables
+      - sweet 
+  - type: Sprite
+    state: demit-nizaya
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 1
+
+- type: entity
+  name: mushroom nizaya
+  parent: FoodNoodlesBase
+  id: FoodNoodlesNizayaMushroom
+  description: A nizaya pasta dish made with seraka mushrooms and quality oil. Has a pronounced nutty flavour.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - savory
+      - gnocchi
+      - nutty
+  - type: Sprite
+    state: mushroom-nizaya
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 15
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 8
+        - ReagentId: Vitamin
+          Quantity: 1

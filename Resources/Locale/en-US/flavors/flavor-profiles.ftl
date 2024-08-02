@@ -138,6 +138,8 @@ flavor-complex-reduced-wine = like intense grape rinds
 flavor-complex-bone-broth = like bone broth
 flavor-complex-gnocchi = like gnocchi
 flavor-complex-stinging = like stinging
+flavor-complex-pancetta = like a less smokey bacon
+flavor-complex-puff-pastry = like puff pastry
 
 ## Complex foodstuffs (cooked foods, joke flavors, etc)
 

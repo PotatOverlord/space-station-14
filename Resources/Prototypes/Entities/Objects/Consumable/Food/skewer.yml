@@ -33,6 +33,7 @@
 # that layers are made invisible as it gets eaten.
 
 # NOTE: Rats take up spots 2 and 4 and tails take up 1 and 3. This is important for sprite layering.
+# NOTE: Seraka shrooms take up spots 2 + 1 or 3 + 4 or 2 + 3
 
 - type: entity
   name: skewer
@@ -158,6 +159,9 @@
       - state: skewer-corn2
       - state: skewer-mushroom2
       - state: skewer-tomato1
+  - type: Tag
+    tags:
+    - Fruit
 
 - type: entity
   name: snake kebab
@@ -176,3 +180,66 @@
         reagents:
         - ReagentId: Nutriment
           Quantity: 12
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: picoss skewer
+  parent: FoodSkewerBase
+  id: FoodMeatPicossKebab
+  description: A popular lizard streetfood consisting of vinegar-marinated armorfish on a skewer with onion and chillis.
+  components:
+  - type: Sprite
+    layers:
+      - state: skewer
+      - state: skewer-pepper1
+      - state: skewer-mushroom3 # actually armorfish
+      - state: skewer-meat-alpha2 # Big fukken onion
+        color: purple
+      - state: skewer-mushroom1
+  - type: FlavorProfile
+    flavors:
+      - acid
+      - fishy
+      - onion
+      - spicy
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 20
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 12
+        - ReagentId: Protein
+          Quantity: 6
+  - type: Tag
+    tags:
+    - Meat
+    - Fruit
+
+- type: entity
+  name: candied mushroom
+  parent: FoodSkewerBase
+  id: FoodSerakaKebab
+  description: A slightly bizarre dish from the lizards' homeworld, consisting of seraka mushrooms coated with caramel on a skewer. Carries a pronounced 'sweet and savoury' kick.
+  components:
+  - type: Sprite
+    layers:
+      - state: skewer
+      - state: skewer-seraka1
+  - type: FlavorProfile
+    flavors:
+      - savory
+      - sweet
+      - mushroom
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 17
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 12
+  - type: Tag
+    tags:
+    - ReptilianFood

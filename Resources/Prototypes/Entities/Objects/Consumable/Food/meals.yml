@@ -606,6 +606,63 @@
           Quantity: 4
 
 - type: entity
+  name: beef wellington
+  parent: FoodMealBase
+  id: FoodMeatBeefWellington
+  description: A luxurious log of beef, covered in a fine mushroom duxelle and pancetta ham, then bound in puff pastry. 
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - mushroom
+      - pancetta
+      - puffpastry
+  - type: Tag
+    tags:
+    - Meat
+  - type: Sprite
+    state: wellington
+  - type: SliceableFood
+    slice: FoodMeatBeefWellingtonSlice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 50
+        reagents:
+        - ReagentId: Vitamin
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 30
+
+- type: entity
+  name: beef wellington slice
+  parent: FoodMealBase
+  id: FoodMeatBeefWellingtonSlice
+  description: A slice of beef wellington, topped with a rich gravy. Simply delicious. 
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - mushroom
+      - pancetta
+      - puffpastry
+  - type: Tag
+    tags:
+    - Meat
+    - Slice
+  - type: Sprite
+    state: wellington-slice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Vitamin
+          Quantity: 2
+        - ReagentId: Protein
+          Quantity: 6
+
+- type: entity
   name: black eggs
   parent: FoodMealBase
   id: FoodMealBlackEggs
@@ -1023,11 +1080,11 @@
   - type: SolutionContainerManager
     solutions:
       food:
-        maxVol: 30
+        maxVol: 50
         reagents:
         - ReagentId: Protein
-          Quantity: 10
-        - ReagentId: Nutriment
+          Quantity: 20
+        - ReagentId: Vitamin
           Quantity: 15
   - type: Tag
     tags:
@@ -1037,7 +1094,7 @@
   name: Tsatsikh 
   parent: FoodMealBase
   id: FoodMealTsatsikh
-  description: A Tiziran dish consisting of spiced ground offal, stuffed into a stomach and boiled. Pretty foul to anyone who's not used to the taste.         
+  description: A lizard dish consisting of spiced ground offal, stuffed into a stomach and boiled. Pretty foul to anyone who's not used to the taste.         
   components:
   - type: FlavorProfile
     flavors:
@@ -1054,3 +1111,60 @@
   - type: Tag
     tags:
      - Meat
+
+- type: entity
+  name: korta wellington
+  parent: FoodMealBase
+  id: FoodMeatKortaWellington
+  description: A luxurious log of beef, covered in a fine mushroom duxelle and pancetta ham, then bound in korta pastry. 
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - mushroom
+      - pancetta
+      - korta
+  - type: Tag
+    tags:
+    - Meat
+  - type: Sprite
+    state: korta-wellington
+  - type: SliceableFood
+    slice: FoodMeatKortaWellingtonSlice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 50
+        reagents:
+        - ReagentId: Vitamin
+          Quantity: 10
+        - ReagentId: Protein
+          Quantity: 30
+
+- type: entity
+  name: korta wellington slice
+  parent: FoodMealBase
+  id: FoodMeatKortaWellingtonSlice
+  description: A slice of korta & beef wellington, topped with a rich gravy. Simply delicious. 
+  components:
+  - type: FlavorProfile
+    flavors:
+      - meaty
+      - mushroom
+      - pancetta
+      - korta
+  - type: Tag
+    tags:
+    - Meat
+    - Slice
+  - type: Sprite
+    state: korta-wellington-slice
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Vitamin
+          Quantity: 2
+        - ReagentId: Protein
+          Quantity: 6

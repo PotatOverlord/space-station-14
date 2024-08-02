@@ -920,6 +920,32 @@
     tags:
     - Meat
 
+- type: entity
+  name: sloppy moe
+  parent: FoodBurgerBase
+  id: FoodBurgerSloppy
+  description: Ground meat mixed with onions and BBQ sauce, sloppily plopped onto a burger bun. Delicious, but guaranteed to get your hands dirty. 
+  components:
+  - type: FlavorProfile
+    flavors:
+      - bun
+      - bbqmeat
+      - onion
+  - type: Sprite
+    state: sloppy
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 15
+  - type: Tag
+    tags:
+    - Meat
+
 #Here be dragons
 
 - type: entity
@@ -979,7 +1005,7 @@
   name: chicken rootroll
   parent: FoodBurgerBase
   id: FoodBurgerRootChicken
-  description: #todo
+  description: A delicious chicken sandwich, in a soft rootbread roll.
   components:
   - type: FlavorProfile
     flavors:
@@ -1035,7 +1061,7 @@
   name: fish rootroll
   parent: FoodBurgerBase
   id: FoodBurgerRootfish
-  description: #todo
+  description: Lightly battered fish, sandwiched in a rootroll.
   components:
   - type: FlavorProfile
     flavors:
@@ -1090,7 +1116,7 @@
   name: ratroll
   parent: FoodBurgerBase
   id: FoodBurgerRootRat
-  description: The Ultimate Lizard Food. We peaked here. All downhill now...
+  description: The Ultimate Lizard Food. We peaked here. All downhill from here...
   components:
   - type: FlavorProfile
     flavors:
@@ -1109,6 +1135,83 @@
           Quantity: 10
         - ReagentId: Vitamin
           Quantity: 5
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: honey sweetroll
+  parent: FoodBurgerBase
+  id: FoodBurgerRootHoney
+  description: A sweetened rootroll with sliced fruit, enjoyed as a seasonal dessert on Tizira.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - sweet
+      - fruity
+  - type: Sprite
+    state: rootrat
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+        - ReagentId: Vitamin
+          Quantity: 5
+  - type: Tag
+    tags:
+    - Fruit
+
+- type: entity
+  name: rootrib
+  parent: FoodBurgerBase
+  id: FoodBurgerRootRib
+  description: An elusive rib shaped burger with limited availablity across the galaxy. Now meeting diversity requirements.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - bbqmeat
+  - type: Sprite
+    state: rootrib
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 15 #bulking on a limited edition item would be such a power move
+  - type: Tag
+    tags:
+    - Meat
+
+- type: entity
+  name: sssloppy moe
+  parent: FoodBurgerBase
+  id: FoodBurgerRootSloppy
+  description: Ground meat mixed with onions and barbeque sssauce, sssloppily plopped onto a rootroll. Delicious, but guaranteed to get your hands dirty.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - korta
+      - bbqmeat
+      - onion
+  - type: Sprite
+    state: rootsloppy
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 5
+        - ReagentId: Protein
+          Quantity: 15
   - type: Tag
     tags:
     - Meat

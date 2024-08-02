@@ -1,7 +1,7 @@
 {
     "version": 1,
     "license": "CC-BY-SA-3.0",
-    "copyright": "Taken from tgstation and modified by Swept at https://github.com/tgstation/tgstation/commit/40d75cc340c63582fb66ce15bf75a36115f6bdaa. candied-mushrooms.png and picoss-skewer.png taken from tgstation at https://github.com/tgstation/tgstation/commit/b05af8b31dc7200b0a1a6ac522a9e60cbcac6600",
+    "copyright": "Taken from tgstation and modified by Swept at https://github.com/tgstation/tgstation/commit/40d75cc340c63582fb66ce15bf75a36115f6bdaa. skewer-seraka1/2/3.png taken from tgstation at https://github.com/tgstation/tgstation/commit/b05af8b31dc7200b0a1a6ac522a9e60cbcac6600",
     "size": {
         "x": 32,
         "y": 32
@@ -101,10 +101,13 @@
             "name": "skewer-snake2"
         },
         {
-            "name": "picoss-skewer"
+            "name": "skewer-seraka1"
         },
         {
-            "name": "candied-mushroom"
+            "name": "skewer-seraka2"
+        },
+        {
+            "name": "skewer-seraka3"
         }
     ]
 }

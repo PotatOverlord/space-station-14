@@ -1203,3 +1203,13 @@
   id: family
   flavorType: Complex
   description: flavor-complex-family
+
+- type: flavor
+  id: pancetta
+  flavorType: Complex
+  description: flavor-complex-pancetta
+
+- type: flavor
+  id: puffpastry
+  flavorType: Complex
+  description: flavor-complex-puff-pastry

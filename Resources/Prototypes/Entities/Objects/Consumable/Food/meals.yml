@@ -1168,3 +1168,29 @@
           Quantity: 2
         - ReagentId: Protein
           Quantity: 6
+
+- type: entity
+  name: steeped shrooms
+  parent: FoodMealBase
+  id: FoodMeatSteepedShrooms
+  description: Seraka mushrooms that have been steeped in alkaline water to remove the extract, thereby making them completely safe to consume. Comes with a free chantrelle. 
+  components:
+  - type: FlavorProfile
+    flavors:
+      - mushroom
+      - savory
+      - nutty
+  - type: Tag
+    tags:
+    - ReptilianFood
+  - type: Sprite
+    state: steeped-shrooms
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 25
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 15
+        - ReagentId: Protein #mushrooms have protein right?
+          Quantity: 5

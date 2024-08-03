@@ -612,3 +612,57 @@
             Quantity: 1
           - ReagentId: Vitamin
             Quantity: 1
+
+- type: entity
+  name: korta brittle slab
+  parent: FoodBakedBase
+  id: FoodBakedKortaBrittle
+  description: A big slab of korta nut brittle. So sugary it should be a crime!
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - peppery
+      - spicy
+  - type: Sprite
+    sprite: Objects/Consumable/Food/Baked/candy.rsi
+    state: korta-brittle-1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 50
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 20
+        - ReagentId: Sugar # for if sugar ever does anything special
+          Quantity: 20
+  - type: SliceableFood
+    count: 5
+    slice: FoodBakedKortaBrittleSlice
+
+- type: entity
+  name: korta brittle slice
+  parent: FoodBakedBase
+  id: FoodBakedKortaBrittleSlice
+  description: A little slice of korta nut brittle. A diabetic's worst enemy.
+  components:
+  - type: FlavorProfile
+    flavors:
+      - sweet
+      - peppery
+      - spicy
+  - type: Sprite
+    sprite: Objects/Consumable/Food/candy.rsi
+    state: korta-brittle-slice-1
+  - type: SolutionContainerManager
+    solutions:
+      food:
+        maxVol: 10
+        reagents:
+        - ReagentId: Nutriment
+          Quantity: 4
+        - ReagentId: Sugar
+          Quantity: 4
+  - type: Tag
+    tags:
+    - Slice

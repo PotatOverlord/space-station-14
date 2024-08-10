@@ -952,7 +952,7 @@
   name: Rootroll
   parent: FoodBreadSliceBase
   id: FoodBreadRootroll
-  description: The equivalent to a burger bun, this mini rootbread fits perfectly in your hand.
+  description: A nut and tuber based alternative to a burger bun, this mini rootbread fits perfectly in your hand.
   components:
   - type: Food
   - type: Sprite
@@ -1143,7 +1143,7 @@
   name: honey sweetroll
   parent: FoodBurgerBase
   id: FoodBurgerRootHoney
-  description: A sweetened rootroll with sliced fruit, enjoyed as a seasonal dessert on Tizira.
+  description: A sweetened rootroll with sliced fruit, enjoyed as a seasonal dessert on the lizard homeworld.
   components:
   - type: FlavorProfile
     flavors:

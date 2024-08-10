@@ -1959,3 +1959,512 @@
     FoodTomato: 1
     FoodCabbage: 1
     FoodOnionSlice: 2
+
+# temmporary lizard section until I do stuff properly
+
+#- type: microwaveMealRecipe
+#  id: Recipe
+#  name:  recipe
+#  result: Food
+#  time: 
+#  reagents:
+#    : 
+#  solids:
+#    :
+
+- type: microwaveMealRecipe
+  id: RecipeBloodSausage
+  name: blood sausage recipe
+  result: FoodMealBloodSausage
+  time: 10
+  reagents:
+    Blood: 5
+    TableSalt: 1
+  solids:
+    FoodMeatCutlet: 1
+    FoodMeatBacon: 1
+
+- type: microwaveMealRecipe
+  id: RecipeHeadCheese
+  name:  headcheese slab recipe
+  result: FoodMealHeadCheese
+  time: 15
+  reagents:
+    TableSalt: 10
+    Blackpepper: 5
+  solids:
+    FoodMeat: 2
+
+- type: microwaveMealRecipe
+  id: RecipeShreddedLungStirfry
+  name: shredded lung stirfry recipe
+  result: FoodSoupLungStirfry
+  time: 20
+  solids:
+    BowlBig: 1
+    FoodOnion: 1
+    FoodCarrot: 1
+    FoodChiliPepper: 1
+    OrganHumanLungs: 1
+
+- type: microwaveMealRecipe
+  id: RecipeTsatsikh
+  name: tsatsikh recipe
+  result: FoodMealTsatsikh
+  time: 25
+  reagents:
+    TableSalt: 2
+    Blackpepper: 2
+  solids:
+    OrganHumanLiver: 1
+    OrganHumanLungs: 1
+    OrganHumanHeart: 1
+    OrganHumanStomach: 1
+    OrganHumanKidneys: 1
+
+- type: microwaveMealRecipe
+  id: RecipeLiverPate
+  name: liver pate recipe
+  result: FoodMealLiverPate
+  time: 5 
+  solids:
+    OrganHumanLiver: 1
+    FoodMeatCutlet: 1
+    FoodOnion: 1
+
+- type: microwaveMealRecipe
+  id: RecipeMoonfishCaviarPaste
+  name: moonfish caviar paste recipe
+  result: FoodMealMoonfishCaviar
+  time: 5
+  reagents:
+    TableSalt: 2
+  solids:
+    FoodEggMoonfish: 1 
+
+# - type: microwaveMealRecipe
+#   id: Recipe
+#   name: desert snail escargot recipe
+#   result: FoodSoupEscargot
+#   time: 15
+#   reagents:
+#     OilOlive: 3
+#     Blackpepper: 2
+#     JuiceLemon: 3
+#   solids:
+#     FoodGarlic: 1
+#     FoodTinSnails: 1 #someone making snails so idk
+
+- type: microwaveMealRecipe
+  id: RecipeFriedBloodSausage
+  name: fried blood sausage recipe
+  result: FoodMealFriedBloodSausage
+  time: 10
+  reagents:
+    KortaFlour: 5
+    OilOlive: 5
+  solids:
+    FoodMealBloodSausage: 1 
+
+- type: microwaveMealRecipe
+  id: RecipeLoadedFries
+  name: loaded poms-franzisks recipe
+  result: FoodMealLoadedFries
+  time: 15
+  reagents:
+    TableSalt: 5
+    Bbqsauce: 3
+  solids:
+    FoodPotato: 1
+    FoodMeatCutlet: 2
+
+- type: microwaveMealRecipe
+  id: RecipeBrainPate
+  name: eyeball and brain pate recipe
+  result: FoodMealBrainPate
+  time: 5
+  reagents:
+    TableSalt: 3 
+  solids:
+    OrganHumanBrain: 1
+    OrganHumanEyes: 1
+    FoodOnion: 1
+
+- type: microwaveMealRecipe
+  id: RecipeCrispyHeadcheese
+  name: crispy headcheese recipe
+  result: FoodMealCrispyHeadcheese
+  time: 10
+  reagents:
+    OilOlive: 3 
+  solids:
+    FoodMealHeadcheeseSlice: 1
+    FoodBreadRootSlice: 1
+
+- type: microwaveMealRecipe
+  id: RecipePicossKebab
+  name: picoss skewer recipe
+  result: FoodKebabPicoss
+  time: 15
+  reagents:
+    Vinegar: 5 
+  solids:
+    FoodOnion: 1
+    FoodChiliPepper: 1
+    FoodKebabSkewer: 1
+    FoodMeatArmorfish: 1
+
+- type: microwaveMealRecipe
+  id: RecipeNectarLarvae
+  name: nectar larvae recipe
+  result: FoodMealnectarLarvae
+  time: 10
+  reagents:
+    KortaNectar: 5 
+  solids:
+    FoodTomato: 1
+    FoodChiliPepper: 1
+    FoodTinLarvae: 1
+
+- type: microwaveMealRecipe
+  id: RecipeMushroomyStirfry
+  name: mushroomy stirfry recipe
+  result: FoodMealMushroomyStirfry
+  time: 15
+  reagents:
+    OilOlive: 5 
+  solids:
+    FoodChanterelle: 1
+    #FoodPlumphelmet: 1
+    FoodSeraka: 1
+
+- type: microwaveMealRecipe
+  id: RecipeMoonfishDemiglace
+  name: moonfish demiglace recipe
+  result: FoodMealMoonfishDemiglace
+  time: 20
+  reagents:
+    Wine: 10
+    KortaMilk: 5
+  solids:
+    FoodPotato: 1
+    FoodCarrot: 1
+    FoodMeatArmorfish: 1
+
+- type: microwaveMealRecipe
+  id: RecipeSurfNTurf
+  name: zagosk surf 'n' turf smorgasbord recipe
+  result: FoodMealSurfNTurf
+  time: 30
+  solids:
+    FoodMealMoonfishCooked: 1
+    FoodKebabPicoss: 2
+    FoodMeatCooked: 2
+    FoodMealRibs: 1
+
+- type: microwaveMealRecipe
+  id: RecipeNizayaSnails
+  name: snail nizaya recipe
+  result: FoodNoodlesNizayaSnails
+  time: 15
+  reagents:
+    Wine: 5 
+  solids:
+    FoodTinSnails: 1
+    FoodNoodlesNizaya: 1
+    FoodGarlic: 1
+
+- type: microwaveMealRecipe
+  id: RecipeNizayaGarlic
+  name: garlic nizaya recipe
+  result: FoodNoodlesNizayaGarlic
+  time: 15
+  reagents:
+    OilOlive: 5 
+  solids:
+    FoodNoodlesNizaya: 1
+    FoodGarlic: 1
+    FoodButter: 1
+
+- type: microwaveMealRecipe
+  id: RecipeNizayaDemit
+  name: demit nizaya recipe
+  result: FoodNoodlesNizayaDemit
+  time: 15
+  reagents:
+    KortaNectar: 5
+    KortaMilk: 5
+  solids:
+    FoodNoodlesNizaya: 1
+    FoodCarrot: 1
+    FoodOnionSlice: 2
+    FoodEggplant: 1
+
+- type: microwaveMealRecipe
+  id: RecipeFlatbreadRustic
+  name: rustic flatbread recipe
+  result: FoodFlatbreadRustic
+  time: 20
+  reagents:
+    OilOlive: 5
+    JuiceLemon: 2
+  solids:
+    FoodDoughRootFlat: 1
+    FoodGarlic: 1
+
+- type: microwaveMealRecipe
+  id: RecipeFlatbreadItalic
+  name: italic flatbread recipe
+  result: FoodFlatbreadItalic
+  time: 20
+  reagents:
+    OilOlive: 5
+  solids:
+    FoodDoughRootFlat: 1
+    FoodGarlic: 1
+    FoodTomato: 2
+    FoodMeatball: 2
+    
+- type: microwaveMealRecipe
+  id: RecipeFlatbreadImperial
+  name: imperial flatbread recipe
+  result: FoodFlatbreadImperial
+  time: 20
+  reagents:
+    OilOlive: 5
+  solids:
+    FoodDoughRootFlat: 1
+    FoodMealLiverPate: 1
+    FoodMealSauerkraut: 1
+    FoodMealHeadcheeseSlice: 3
+
+
+- type: microwaveMealRecipe
+  id: RecipeFlatbreadRaw
+  name: rawmeat flatbread recipe
+  result: FoodFlatbreadRaw
+  time: 20
+  solids:
+    FoodDoughRootFlat: 1
+    FoodMeat: 3
+
+
+- type: microwaveMealRecipe
+  id: RecipeFlatbreadStinging
+  name: stinging flatbread recipe
+  result: FoodFlatbreadStinging
+  time: 20
+  solids:
+    FoodDoughRootFlat: 1
+    FoodTinLarvae: 1  
+    FoodTinJellyfish: 1
+    FoodNettle: 2
+
+- type: microwaveMealRecipe
+  id: RecipeFlatbreadZmorgast
+  name: zmorgast flatbread recipe
+  result: FoodFlatbreadZmorgast
+  time: 20
+  solids:
+    FoodDoughRootFlat: 1
+    FoodCucumber: 2
+    FoodEgg: 1
+    FoodHumanOrganLiver: 1
+
+- type: microwaveMealRecipe
+  id: RecipeFlatbreadFish
+  name: bbq fish flatbread recipe
+  result: FoodFlatbreadFish
+  time: 20
+  reagents:
+    BbqSauce: 5
+  solids:
+    FoodDoughRootFlat: 1
+    FoodMeatMoonfish: 2
+
+#- type: microwaveMealRecipe
+#  id: RecipeFlatbreadMushroom
+#  name: mushroom flatbread recipe
+#  result: FoodFlatbreadMushroom
+#  time: 20
+#  reagents:
+#    OilOlive: 5
+#  solids:
+#    FoodDoughRootFlat: 1
+#    FoodSeraka: 2
+#    FoodChanterelle: 1
+#    FoodTomato: 1
+
+- type: microwaveMealRecipe
+  id: RecipeFlatbreadNutty
+  name: nutty flatbread recipe
+  result: FoodFlatbreadNutty
+  time: 20
+  reagents:
+    KortaMilk: 5
+    KortaFlour: 5
+  solids:
+    FoodDoughRootFlat: 1
+    FoodKorta: 2
+    
+- type: microwaveMealRecipe
+  id: RecipeBurgerRootEmperor
+  name: emperor rootroll recipe
+  result: FoodBurgerRootEmperor
+  time: 10
+  solids:
+    FoodBurgerRootroll: 1
+    FoodMealHeadcheeseSlice: 2
+    FoodMealMoonfishCaviar: 1
+    FoodMealLiverPate: 1
+
+- type: microwaveMealRecipe
+  id: RecipeBurgerRootHoney
+  name: honey rootroll recipe
+  result: FoodBurgerRootHoney
+  time: 10
+  reagents:
+  Sugar: 5 #once honey is added, replace
+  solids:
+    FoodBurgerRootroll: 1
+    FoodBerries: 2
+    FoodBanana: 1
+
+- type: microwaveMealRecipe
+  id: RecipeBurgerRootBurger
+  name: rootburger recipe
+  result: FoodBurgerRootBurger
+  time: 10
+  solids:
+    FoodBurgerRootroll: 1
+    FoodMeat: 1
+
+- type: microwaveMealRecipe
+  id: RecipeBurgerRootGuffin
+  name: rootguffin recipe
+  result: FoodBurgerRootGuffin
+  time: 10
+  solids:
+    FoodBurgerRootroll: 1
+    FoodMeatBacon: 2
+    FoodMealFriedEgg: 1
+
+- type: microwaveMealRecipe
+  id: RecipeBurgerRootRib
+  name: rootrib recipe
+  result: FoodBurgerRootRib
+  time: 10
+  solids:
+    FoodBurgerRootroll: 1
+    FoodMealRibs: 1
+    FoodOnionSlice: 1
+
+- type: microwaveMealRecipe
+  id: RecipeBurgerRootBurger
+  name: rootburger recipe
+  result: FoodBurgerRootBurger
+  time: 10
+  reagents:
+    mayonaise: 5
+  solids:
+    FoodBurgerRootroll: 1
+    FoodMeatChicken: 1
+
+- type: microwaveMealRecipe
+  id: RecipeBurgerRootFish
+  name: rootburger recipe
+  result: FoodBurgerRootBurger
+  time: 10
+  solids:
+    FoodBurgerRootroll: 1
+    FoodMeatFish: 1
+
+- type: microwaveMealRecipe
+  id: RecipeBurgerRootSloppy
+  name: sssloppy moe recipe
+  result: FoodBurgerRootSloppy
+  time: 10
+  reagents:
+    BbqSauce: 5
+  solids:
+    FoodBurgerRootroll: 1
+    FoodMeatCutlet: 2
+    FoodOnionSlice: 1
+
+- type: microwaveMealRecipe
+  id: RecipeBurgerSloppy
+  name: sloppy moe recipe
+  result: FoodBurgerSloppy
+  time: 10
+  reagents:
+    BbqSauce: 5
+  solids:
+    FoodBurgerBun: 1
+    FoodMeatCutlet: 2
+    FoodOnionSlice: 1
+
+- type: microwaveMealRecipe
+  id: RecipeMealPatzikula
+  name: patzikula recipe
+  result: FoodMealPatzikula
+  time: 15 
+  solids:
+    FoodTomato: 2
+    FoodOnion: 1
+    FoodChiliPepper: 1
+    FoodEgg: 1
+
+- type: microwaveMealRecipe
+  id: RecipeCandyKortaBrittle
+  name: korta brittle slice recipe
+  result: FoodMealKortaSlab
+  time: 25
+  reagents:
+    Sugar: 5
+    TableSalt: 2
+    KortaNectar: 10
+  solids:
+    FoodKorta: 2
+    FoodButterSlice: 2
+
+- type: microwaveMealRecipe
+  id: RecipeSerakaKebab
+  name: candied mushroom recipe
+  result: FoodSerakaKebab
+  time: 5
+  reagents:
+    Sugar : 5 
+  solids:
+    FoodKebabSkewer: 1
+    FoodSeraka: 1
+
+- type: microwaveMealRecipe
+  id: RecipeMealSauerkraut
+  name: sauerkraut recipe
+  result: FoodMealSauerkraut
+  time: 15
+  reagents:
+    TableSalt: 10 
+  solids:
+    FoodCabbage: 1
+
+- type: microwaveMealRecipe
+  id: RecipeDoughRootDumpling
+  name: rootdough dumplings recipe
+  result: FoodDoughRootDumpling
+  time: 5
+  reagents:
+    KortaFlour: 5 
+  solids:
+    FoodPotato: 1
+
+- type: microwaveMealRecipe
+  id: RecipeMealBlackEggs
+  name: black eggs recipe
+  result: FoodMealBlackEggs
+  time: 15
+  reagents:
+    Blood: 5
+    Vinegar: 5
+  solids:
+    FoodEgg: 2

@@ -202,7 +202,8 @@
     flavors:
       - earthy
       - gnocchi
-      - reducedwine 
+      - reducedwine
+      - garlic
   - type: Sprite
     state: snail-nizaya
   - type: SolutionContainerManager
@@ -242,7 +243,7 @@
   name: demit nizaya
   parent: FoodNoodlesBase
   id: FoodNoodlesNizayaDemit
-  description: A sweet, creamy nizaya pasta dish made with korta milk and nectar.
+  description: A sweet, creamy nizaya pasta dish made with korta milk, nectar and assorted vegetables.
   components:
   - type: FlavorProfile
     flavors:
@@ -266,7 +267,7 @@
   name: mushroom nizaya
   parent: FoodNoodlesBase
   id: FoodNoodlesNizayaMushroom
-  description: A nizaya pasta dish made with seraka mushrooms and quality oil. Has a pronounced nutty flavour.
+  description: A nizaya pasta dish made with seraka mushrooms and olive oil. Has a pronounced nutty flavour.
   components:
   - type: FlavorProfile
     flavors:

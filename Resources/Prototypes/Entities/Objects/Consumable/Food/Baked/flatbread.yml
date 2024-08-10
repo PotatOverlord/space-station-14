@@ -29,7 +29,7 @@
     - ReptilianFood
 
 - type: entity
-  name: fish flatbread
+  name: bbq fish flatbread
   parent: FoodFlatbreadBase
   id: FoodFlatbreadFish
   description: Superengine delamination, clown ops, too cold outside, I just want to grill for Weh's sake!
@@ -125,6 +125,7 @@
 #  - type: FlavorProfile
 #    flavors:
 #      - mushroom
+#      - savory
 #      - tomato
 #      - garlic
 #      - korta
@@ -177,7 +178,7 @@
   name: meatlovers flatbread
   parent: FoodFlatbreadBase
   id: FoodFlatbreadRaw
-  description: dly enough, this lizard dish is actually a favorite of some health-minded humans.
+  description: oddly enough, this lizard dish is actually a favorite of some health-minded humans.
   components:
   - type: FlavorProfile
     flavors:

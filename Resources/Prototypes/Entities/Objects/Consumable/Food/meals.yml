@@ -829,8 +829,8 @@
 - type: entity
   name: crispy headcheese
   parent: FoodMealBase
-  id: FoodMealCrispyHeadcheeseSlice
-  description: A delicious snack from the streets of Zagoskeld, consisting of headcheese coated in rootbread breadcrumbs. Commonly served with fries.  
+  id: FoodMealCrispyHeadcheese
+  description: A delicious snack from the streets of the lizard capital, consisting of headcheese coated in rootbread breadcrumbs. Commonly served with fries.  
   components:
   - type: FlavorProfile
     flavors:
@@ -1062,7 +1062,7 @@
      - ReptilianFood
 
 - type: entity
-  name: Zagosk surf 'n' turf smorgasbord 
+  name: zagosk surf 'n' turf smorgasbord 
   parent: FoodMealBase
   id: FoodMealSurfNTurf
   description: A massive platter of the lizard's finest meat and seafood, typically shared by groups at the beach. Of course, nothing's stopping you eating it on your own... fatass.        

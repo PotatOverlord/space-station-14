@@ -187,13 +187,13 @@
 - type: entity
   name: picoss skewer
   parent: FoodSkewerBase
-  id: FoodMeatPicossKebab
+  id: FoodKebabPicoss
   description: A popular lizard streetfood consisting of vinegar-marinated armorfish on a skewer with onion and chillis.
   components:
   - type: Sprite
     layers:
       - state: skewer
-      - state: skewer-pepper1
+      - state: skewer-pepper4
       - state: skewer-mushroom3 # actually armorfish
       - state: skewer-meat-alpha2 # Big fukken onion
         color: purple
@@ -222,7 +222,7 @@
   name: candied mushroom
   parent: FoodSkewerBase
   id: FoodSerakaKebab
-  description: A slightly bizarre dish from the lizards' homeworld, consisting of seraka mushrooms coated with caramel on a skewer. Carries a pronounced 'sweet and savoury' kick.
+  description: A slightly bizarre dish from the lizards' homeworld, consisting of a seraka mushroom coated with caramel on a skewer. Carries a pronounced 'sweet and savoury' kick.
   components:
   - type: Sprite
     layers:

@@ -559,7 +559,7 @@
 
 - type: entity
   name: Alexander
-  parent: MobPig
+  parent: [ MobPig, ShowSecurityIcons ]
   id: MobAlexander
   description: Chef's finest colleague.
   components:
@@ -570,6 +570,12 @@
     interactSuccessSpawn: EffectHearts
     interactSuccessSound:
       path: /Audio/Animals/pig_oink.ogg
+- type: IntrinsicRadioTransmitter
+    channels:
+    - Security
+  - type: ActiveRadio
+    channels:
+    - Security # Oink oink
   - type: Grammar
     attributes:
       proper: true
